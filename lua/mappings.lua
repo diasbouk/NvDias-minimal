@@ -14,6 +14,7 @@ vim.opt.hlsearch = true
 
 -- Highlight the current line
 vim.opt.cursorline = true
+vim.opt.laststatus = 3
 
 -- Always let n lines before EOF , to keep the cursor on the middle 
 vim.opt.scrolloff = 12
@@ -24,12 +25,30 @@ vim.opt.guicursor = "n-v-i-c:block-Cursor"
 -- Enable those to replace spaces and tabs with symbols
 -- vim.opt.listchars = { tab = '. ' , trail = '·', nbsp = '␣' }
 
+vim.opt.fillchars = vim.opt.fillchars + 'vert:│'
+-- Set the fill characters for horizontal split
+vim.opt.fillchars = vim.opt.fillchars + 'horiz:─'
 
+-- Customize the highlight group for split separators to white
+-- vim.cmd [[highlight WinSeparator guifg=#ffffff guibg=NONE]]
+-- vim.cmd [[highlight VertSplit guifg=#ffffff guibg=NONE]]
+
+function OpenBottomTerminal()
+    vim.cmd('belowright split')
+    vim.cmd('resize 10')
+    vim.cmd('term')
+    vim.cmd('startinsert')
+end
 
 
 --[[ Keymappings - shortcuts ]]
 
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 vim.keymap.set('t', '<C-w>w', '<cmd><C-w>w<CR>')
+vim.keymap.set('n', '<space>h', ':lua OpenBottomTerminal()<CR>', { noremap = true, silent = true })
 vim.keymap.set("n", "<C-s>", ":wa<CR>")
 vim.keymap.set("n", "<space>gb", ":Ex<CR>")
+vim.cmd("tnoremap <A-w> <C-\\><C-N><C-w>w")
+vim.cmd("tnoremap <A-j> <C-\\><C-N><C-w>j")
+vim.cmd("tnoremap <C-k> <C-\\><C-N><C-w>k")
+vim.cmd("tnoremap <A-l> <C-\\><C-N><C-w>l")
