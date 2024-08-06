@@ -21,3 +21,4 @@ local opts = {}
 -- Importing plugins and other lua file
 require("lazy").setup("plugins")
 require("mappings")
+require("nvim-options")
