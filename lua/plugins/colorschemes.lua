@@ -4,6 +4,7 @@ return {
 	{ "frenzyexists/aquarium-vim" },
 	{ "bluz71/vim-moonfly-colors", name = "moonfly", lazy = false, priority = 1000 },
 	{ "AlessandroYorba/Alduin" },
+	{ 'projekt0n/github-nvim-theme' },
 
 	{
 		"goolord/alpha-nvim",

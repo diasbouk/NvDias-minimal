@@ -12,6 +12,7 @@ return {
 			lspconfig.lua_ls.setup({})
 			lspconfig.clangd.setup({})
 			lspconfig.tsserver.setup({})
+			lspconfig.prettier.setup({})
 		end,
 	},
 }
