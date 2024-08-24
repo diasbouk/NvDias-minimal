@@ -4,29 +4,11 @@ return {
 	{ "bluz71/vim-moonfly-colors", name = "moonfly", lazy = false, priority = 1000 },
 	{ "AlessandroYorba/Alduin" },
 	{"rebelot/kanagawa.nvim"},
-
 	{
-		"goolord/alpha-nvim",
-		dependencies = {
-			"nvim-tree/nvim-web-devicons",
-		},
-
+		'echasnovski/mini.nvim',
+		version = '*' ,
 		config = function()
-			local alpha = require("alpha")
-			local dashboard = require("alpha.themes.startify")
-
-			dashboard.section.header.val = {
-	"					                          ",
-    "					  ██╗   ██╗██╗███╗   ███╗ ",
-    "					 ╗██║   ██║██║████╗ ████║ ",
-    "					 ║██║   ██║██║██╔████╔██║ ",
-    "					 ║╚██╗ ██╔╝██║██║╚██╔╝██║ ",
-    "					 ╝ ╚████╔╝ ██║██║ ╚═╝ ██║ ",
-    "					    ╚═══╝  ╚═╝╚═╝     ╚═╝ ",
-    "					                                                     ",
-			}
-
-			alpha.setup(dashboard.opts)
+			require('mini.statusline').setup()
 		end,
 	},
 }
