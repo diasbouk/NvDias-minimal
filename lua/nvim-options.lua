@@ -1,7 +1,7 @@
 --[[ OPTIONS ]]
 
 -- Theme
---[[ vim.cmd.colorscheme("tokyonight-night") ]]
+vim.cmd.colorscheme("kanagawa")
 
 -- For tabs size and indeneting
 vim.opt.tabstop = 4

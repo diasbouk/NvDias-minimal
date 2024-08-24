@@ -1,10 +1,9 @@
 return {
-	{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
 	{ "folke/tokyonight.nvim", lazy = false, priority = 1000, opts = {} },
 	{ "frenzyexists/aquarium-vim" },
 	{ "bluz71/vim-moonfly-colors", name = "moonfly", lazy = false, priority = 1000 },
 	{ "AlessandroYorba/Alduin" },
-	{ 'projekt0n/github-nvim-theme' },
+	{"rebelot/kanagawa.nvim"},
 
 	{
 		"goolord/alpha-nvim",
