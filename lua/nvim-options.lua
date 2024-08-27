@@ -1,7 +1,7 @@
 --[[ OPTIONS ]]
 
 -- Theme
-vim.cmd.colorscheme("kanagawa")
+vim.cmd 'colorscheme kanagawa'
 
 -- For tabs size and indeneting
 vim.opt.tabstop = 4
@@ -12,6 +12,7 @@ vim.opt.shiftwidth = 4
 
 -- Show the current cursor line number instead of 0
 vim.opt.nu = true
+
 
 -- When there is a previous search pattern, highlight all its matches.
 vim.opt.hlsearch = true

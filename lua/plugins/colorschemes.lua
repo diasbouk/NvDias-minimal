@@ -3,7 +3,7 @@ return {
 	{ "frenzyexists/aquarium-vim" },
 	{ "bluz71/vim-moonfly-colors", name = "moonfly", lazy = false, priority = 1000 },
 	{ "AlessandroYorba/Alduin" },
-	{"rebelot/kanagawa.nvim"},
+
 	{
 		'echasnovski/mini.nvim',
 		version = '*' ,
@@ -11,4 +11,5 @@ return {
 			require('mini.statusline').setup()
 		end,
 	},
+	{'rebelot/kanagawa.nvim'},
 }
