@@ -1,6 +1,7 @@
 return {
 	{
 		"williamboman/mason.nvim",
+		opts = { ensure_installed = { "clangd", "pyright", "lua-language-serve" } },
 		config = function()
 			require("mason").setup()
 		end,
@@ -13,6 +14,7 @@ return {
 			lspconfig.clangd.setup({})
 			lspconfig.tsserver.setup({})
 			lspconfig.prettier.setup({})
+			lspconfig.pyright.setup({})
 		end,
 	},
 }
