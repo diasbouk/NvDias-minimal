@@ -6,6 +6,7 @@ vim.cmd 'colorscheme kanagawa'
 -- For tabs size and indeneting
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
+vim.opt.grepprg = 'rg'
 
 -- For setting relative line numbers 
  vim.opt.rnu = true

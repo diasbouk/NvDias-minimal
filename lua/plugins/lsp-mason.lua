@@ -12,7 +12,7 @@ return {
 			local lspconfig = require("lspconfig")
 			lspconfig.lua_ls.setup({})
 			lspconfig.clangd.setup({})
-			lspconfig.tsserver.setup({})
+			lspconfig.ts_ls.setup({})
 			lspconfig.prettier.setup({})
 			lspconfig.pyright.setup({})
 		end,
